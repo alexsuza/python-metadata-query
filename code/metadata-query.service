@@ -1,0 +1,13 @@
+[Unit]
+Description=metadata-query
+[Service]
+Type=simple
+EnvironmentFile=/etc/sysconfig/rads
+Environment="PYTHONPATH=/opt/cloude/python/lib/python3.8/site-packages:/opt/cloude/python/lib64/python3.8/site-packages:/usr/lib/python3.8/site-packages"
+ExecStart=/usr/bin/metadataquery
+Restart=always
+RestartSec=1
+StartLimitInterval=0
+User=root
+[Install]
+WantedBy=multi-user.target

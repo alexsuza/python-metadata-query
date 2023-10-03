@@ -1,0 +1,9 @@
+Flask>1.0
+gunicorn
+SQLAlchemy
+Flask-SQLAlchemy
+pymysql
+python-dotenv 
+Flask-Script
+cryptography
+
